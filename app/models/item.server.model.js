@@ -16,6 +16,15 @@ var ItemSchema = new Schema({
 		required: 'Please fill Item name',
 		trim: true
 	},
+	price: {
+		type: Number,
+		default: 0,
+		trime: true
+	},
+	description: {
+		type: String,
+		default: ''
+	},
 	created: {
 		type: Date,
 		default: Date.now
